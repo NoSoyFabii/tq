@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><3</title>
+  <!-- Agrega la hoja de estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: url('fondo.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-section {
+      text-align: center;
+      padding: 50px 20px;
+      color: rgb(38, 37, 0);
+      width: 80%;
+    }
+    .hero-section h1, .hero-section p, .hero-section h3 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .hero-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .hero-section p {
+      font-size: 1.2em;
+    }
+    .regalo {
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.6);
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      text-align: center;
+    }
+    .gato {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .header-title {
+      color: rgb(248, 8, 8);
+      font-size: 1.8em;
+      font-weight: bold;
+      display: inline-block;
+    }
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 1.8em;
+      }
+      .hero-section p {
+        font-size: 1em;
+      }
+      .hero-section {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-section">
+    <h1>feliz cumpleaños bonita<3!</h1>
+    <h3 class="header-title">Abre el regalo dándole click, no es ningun virus, tranquila :')</h3>
+    
+    <div class="regalo" onclick="playAudio()">
+      <img src="regalocerrado.png" alt="Regalo cerrado" class="img-fluid" width="200" id="regalo">
+      <img src="regaloabierto.png" alt="Regalo abierto" class="img-fluid" width="200" id="regaloAb" style="display: none;">
+    </div>
+  </div>
+
+  <audio id="audio" style="display: none;">
+    <source src="sonido.mp3" type="audio/mp3">
+  </audio>
+  
+  <div class="card mt-3 mb-3" id="contenido" style="display: none;">
+    <div class="card-body">
+      <h5 class="card-title">feli cumple:c</h5>
+      <p class="card-text">Holap, en primer lugar, espero ser la primera. Ahora sí, sé que quizá te habré mencionado que no te iba a saludar para no molestarte, pero también sé que me conoces lo suficiente para saber que, si lo haría, no podría dejar pasar este momento. Es el cuarto año en el cual puedo desearte un ¡feliz cumpleaños! y espero que me permitas seguir haciéndolo.
+        Empezamos. Espero que no se te haga mucho texto todo esto. Continuando solo decirte que de corazón espero que el día de hoy te la puedas pasar bien, la verdad siento que sí, cumples 22 añitos y pensar que te conocí con tan solo 18, tan solo pensar en todo este tiempo me trae muchos recuerdos de nosotras, cada día a tu lado siempre fue lo más bonito que me puede pasar, de verdad gracias por también estar a mi lado.
+        Como decía, espero que te la pases bien hoy con tus amigos. No sabes cuánto me hubiera gustado estar en algún momento pasando estas fechas contigo, pero mientras más tiempo se hace la espera, más ganas me da de verte. Estoy segura de que en algún momento la vida me permitirá lo que tanto deseo, que es poder demostrarte lo mucho que te quiero y estar contigo estos días.
+        Sé que no estamos en nuestro mejor momento, pero solo espero que las cosas te vayan bien. A pesar de todo lo que haya pasado entre nosotras, decirte que te tengo algún rencor o algo sería mentirte, porque lo único que deseo para ti es lo mejor. Solo quiero que te sientas bien, esté yo o no. Espero que la vida te trate bien, como siempre te lo he dicho, como realmente te lo mereces, porque sí, mereces lo mejor del mundo. Eres la chica más linda que conozco, y no solo lo digo internamente, porque quizá es lo que te conozca más, sino también por ser tú. Qué bonita eres. Me gusta todo de ti y nunca me cansaré de decirlo. Gracias por haberme permitido estar contigo. Eres lo más preciado que la vida me pudo haber dado. Quisiera cuidarte y ponerte en una cajita de cristal para que nadie te haga daño. En serio, muchas gracias por todo este tiempo juntas. Siempre me llevo lo bueno entre nosotras, aunque sé que a veces te diga que no. De verdad, muchas gracias, corazón.
+        Ya no quiero extenderme más para no molestarte. Seguro que tus amigos te habrán mandado mensajes o incluso llamado. Espero que te la pases bien con ellos. Eso es todo de mi parte. Te quiero mucho y mucha suerte con tus cosas. Nunca dudes de lo importante que eres para mí. Te amo, bonita, y felices 22 añitos <3.</p>
+      <img src="free.jpg" class="img-fluid" width="200" alt="Imagen de gato">
+    </div>
+  </div>
+  <center>
+    <div class="gato">
+      <img src="flork.png" alt="Flork" width="150">
+    </div>
+  </center>
+
+  <!-- Agrega los scripts de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.1/dist/confetti.browser.min.js"></script>
+  <script>
+    function onClick() {
+      confetti({
+        particleCount: 150,
+        spread: 60
+      });
+    }
+    function playAudio() {
+      // Obtén el elemento de audio
+      var audio = document.getElementById("audio");
+      // Reproduce el audio
+      audio.play();
+      
+      $("#contenido").toggle();
+      
+      onClick();
+      
+      $("#regalo").toggle();
+      $("#regaloAb").toggle();
+    }
+  </script>
+</body>
+</html>
